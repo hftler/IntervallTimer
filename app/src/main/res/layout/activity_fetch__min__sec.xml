@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingTop="50dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.andi.intervalltimer.Fetch_Min_Sec">
+
+    <TextView
+        android:id="@+id/min"
+        android:text="@string/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/numberPicker_min"
+        android:layout_alignEnd="@+id/numberPicker_min" />
+
+    <TextView
+        android:id="@+id/sec"
+        android:text="@string/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_above="@+id/numberPicker_min"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sec"
+        android:layout_alignLeft="@+id/sec"
+        android:layout_alignStart="@+id/sec">
+
+    </NumberPicker>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker_min"
+        android:layout_below="@+id/min"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"></NumberPicker>
+
+    <Button
+        android:id="@+id/setButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set"
+        android:layout_below="@+id/numberPicker_min"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+
+
+
+
+
